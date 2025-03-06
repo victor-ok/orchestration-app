@@ -1,5 +1,5 @@
 # Backend Deployment Orchestration
-
+![architecture design](/assets/img/backed-readme.png "archi")
 ## Overview
 This architecture automates backend deployments using a self-hosted Git server, an orchestration application, and a Kubernetes-based backend environment.
 
