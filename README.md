@@ -58,16 +58,7 @@ This architecture automates backend deployments using a self-hosted Git server, 
 - **FastAPI / Express.js** – Potential backend frameworks for the Orchestration App.  
 - **Kubernetes** – Orchestrates backend deployments.  
 - **VPS Node** – Hosts Kubernetes namespaces.  
-sequenceDiagram
-    Client->>Server: Connect via WS
-    Client->>Server: Send commit+test command
-    Server->>K8s: Create namespace
-    Server->>K8s: Deploy test pod
-    K8s->>TestPod: Clone repo
-    K8s->>TestPod: Checkout commit
-    K8s->>TestPod: Run tests
-    TestPod->>Server: JSON results
-    Server->>Client: Return results
+![process design](/assets/img/diagram.png "process")
 # Setup Instructions
 
 ## 1️⃣ Prerequisites
